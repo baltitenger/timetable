@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head>
+
+<meta charset='UTF-8'>
+<title>Timetable</title>
+<script src='index.js'></script>
+<style>
+body {
+	font-size: large;
+}
+table, .tile {
+	border: 1px solid #333;
+}
+.tile {
+	cursor: pointer;
+}
+th {
+	width: 120px;
+}
+th, td {
+	text-align: center;
+}
+table {
+	empty-cells: hide;
+}
+.startt::after {
+	content: ' - ';
+}
+@media only screen and (max-width: 1100px) {
+	.startt::after {
+		content: '';
+	}
+	.startt, .endt {
+		display: block;
+	}
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+</style>
+
+</head><body>
+
+<table>
+	<thead>
+		<tr>
+			<th>Day</th>
+			<th>0</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+			<th>7</th>
+			<th>8</th>
+		</tr>
+	</thead>
+	<tbody id='tbody'>
+	</tbody>
+</table>
+
+</body></html>

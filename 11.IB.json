@@ -1,0 +1,313 @@
+{
+	"table": [
+		[
+			{
+				"start": 1,
+				"len": 1,
+				"name": "mat"
+			}, {
+				"start": 1,
+				"len": 1,
+				"name": "MAT"
+			}, {
+				"start": 2,
+				"len": 1,
+				"name": "fra"
+			}, {
+				"start": 2,
+				"len": 1,
+				"name": "ném"
+			}, {
+				"start": 2,
+				"len": 1,
+				"name": "oro"
+			}, {
+				"start": 2,
+				"len": 1,
+				"name": "spa"
+			}, {
+				"start": 3,
+				"len": 2,
+				"name": "mag"
+			}, {
+				"start": 5,
+				"len": 1,
+				"name": "inf"
+			}, {
+				"start": 5,
+				"len": 1,
+				"name": "bio"
+			}, {
+				"start": 6,
+				"len": 1,
+				"name": "fra"
+			}, {
+				"start": 6,
+				"len": 3,
+				"name": "fiz"
+			}
+		], [
+			{
+				"start": 0,
+				"len": 2,
+				"name": "tör"
+			}, {
+				"start": 0,
+				"len": 2,
+				"name": "KÉM"
+			}, {
+				"start": 2,
+				"len": 2,
+				"name": "köz"
+			}, {
+				"start": 2,
+				"len": 2,
+				"name": "pszi"
+			}, {
+				"start": 4,
+				"len": 1,
+				"name": "ang"
+			}, {
+				"start": 4,
+				"len": 1,
+				"name": "ANG"
+			}, {
+				"start": 5,
+				"len": 1,
+				"name": "mat"
+			}, {
+				"start": 5,
+				"len": 1,
+				"name": "MAT"
+			}, {
+				"start": 6,
+				"len": 1,
+				"name": "fra"
+			}, {
+				"start": 6,
+				"len": 1,
+				"name": "ném"
+			}, {
+				"start": 6,
+				"len": 1,
+				"name": "oro"
+			}, {
+				"start": 6,
+				"len": 1,
+				"name": "spa"
+			}, {
+				"start": 7,
+				"len": 1,
+				"name": "kém"
+			}
+		], [
+			{
+				"start": 0,
+				"len": 2,
+				"name": "fiz"
+			}, {
+				"start": 2,
+				"len": 1,
+				"name": "mag"
+			}, {
+				"start": 3,
+				"len": 1,
+				"name": "tör"
+			}, {
+				"start": 3,
+				"len": 1,
+				"name": "kém"
+			}, {
+				"start": 4,
+				"len": 2,
+				"name": "ang"
+			}, {
+				"start": 4,
+				"len": 2,
+				"name": "ANG"
+			}, {
+				"start": 6,
+				"len": 2,
+				"name": "inf"
+			}, {
+				"start": 6,
+				"len": 2,
+				"name": "bio"
+			}
+		], [
+			{
+				"start": 0,
+				"len": 2,
+				"name": "mat"
+			}, {
+				"start": 0,
+				"len": 2,
+				"name": "MAT"
+			}, {
+				"start": 2,
+				"len": 2,
+				"name": "tok"
+			}, {
+				"start": 4,
+				"len": 1,
+				"name": "fra"
+			}, {
+				"start": 4,
+				"len": 1,
+				"name": "ném"
+			}, {
+				"start": 4,
+				"len": 1,
+				"name": "oro"
+			}, {
+				"start": 4,
+				"len": 1,
+				"name": "spa"
+			}, {
+				"start": 5,
+				"len": 2,
+				"name": "inf"
+			}, {
+				"start": 5,
+				"len": 2,
+				"name": "bio"
+			}, {
+				"start": 7,
+				"len": 2,
+				"name": "tör"
+			}, {
+				"start": 7,
+				"len": 2,
+				"name": "KÉM"
+			}
+		], [
+			{
+				"start": 0,
+				"len": 2,
+				"name": "MAT"
+			}, {
+				"start": 0,
+				"len": 2,
+				"name": "mag"
+			}, {
+				"start": 2,
+				"len": 1,
+				"name": "tör"
+			}, {
+				"start": 3,
+				"len": 2,
+				"name": "ang"
+			}, {
+				"start": 3,
+				"len": 2,
+				"name": "ANG"
+			}, {
+				"start": 5,
+				"len": 1,
+				"name": "köz"
+			}, {
+				"start": 5,
+				"len": 1,
+				"name": "pszi"
+			}, {
+				"start": 6,
+				"len": 1,
+				"name": "ofo"
+			}, {
+				"start": 7,
+				"len": 2,
+				"name": "fra"
+			}, {
+				"start": 7,
+				"len": 2,
+				"name": "ném"
+			}, {
+				"start": 7,
+				"len": 2,
+				"name": "oro"
+			}, {
+				"start": 7,
+				"len": 2,
+				"name": "spa"
+			}
+		]
+	],
+	"classes": {
+		"MAT": {
+			"pretty": "Maths HL",
+			"gc": "MjA5ODI0NDY5NDcy"
+		},
+		"mat": {
+			"pretty": "Maths SL",
+			"gc": "MjA5OTYyOTUyNDIx"
+		},
+		"fra": {
+			"pretty": "Francia",
+			"gc": "idk"
+		},
+		"ném": {
+			"pretty": "Német",
+			"gc": "MjEwMzQzODEyMzE0"
+		},
+		"oro": {
+			"pretty": "Orosz",
+			"gc": "MjM3NzY4MDAyOTUz"
+		},
+		"spa": {
+			"pretty": "Spanyol",
+			"gc": "idk"
+		},
+		"mag": {
+			"pretty": "Magyar",
+			"gc": "MTcyNjUzNjM0NzE3"
+		},
+		"inf": {
+			"pretty": "CompSci",
+			"gc": "MjA5ODk1Mjg1Njg1"
+		},
+		"bio": {
+			"pretty": "Biology",
+			"gc": "MjA5ODM3MjU2OTIx"
+		},
+		"fiz": {
+			"pretty": "Physics",
+			"gc": "MjA5ODg1MzQ0MTcw"
+		},
+		"tör": {
+			"pretty": "History",
+			"gc": "MjEwMzEzODM5Mzgy"
+		},
+		"köz": {
+			"pretty": "Economics",
+			"gc": "MTcyNjYwNDY1NDk1"
+		},
+		"pszi": {
+			"pretty": "Psychology",
+			"gc": "idk"
+		},
+		"ang": {
+			"pretty": "English B",
+			"gc": "MjEwMDgyNDU2ODMz"
+		},
+		"ANG": {
+			"pretty": "English A",
+			"gc": "MjA5ODEyOTA5NTQx"
+		},
+		"tok": {
+			"pretty": "TOK",
+			"gc": "MjA5ODQ3ODc0ODQx"
+		},
+		"ofo": {
+			"pretty": "Ofő",
+			"gc": "MzQ2NTY2MzQ0NTla"
+		},
+		"kém": {
+			"pretty": "Kémia",
+			"gc": "MjA4OTMxNzQ3OTc5"
+		},
+		"KÉM": {
+			"pretty": "Kémia fakt",
+			"gc": "MzQ2NTY2MzQ0NTla"
+		}
+	}
+}
