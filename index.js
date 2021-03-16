@@ -68,15 +68,15 @@ function update_times() {
 		left.innerText = formatter.format(timetable[c].end - time);
 		progressbar.style.width = 100*(timetable[c].end - time)/(timetable[c].end - timetable[c].start) + '%';
 		progressbar.style['background-color'] = classes[timetable[c].name].color;
-		progressbar.style.right = 0;
+		delete progressbar.style.right;
 	} else {
 		cur.innerText = '-';
-		cur.href = null;
-		cur.style['background-color'] = null;
+		delete cur.href;
+		delete cur.style['background-color'];
 		left.innerText = formatter.format(timetable[n].start - time);
 		progressbar.style.width = 100*(1 - (timetable[n].start - time)/(timetable[n].start - timetable[c].end)) + '%';
 		progressbar.style['background-color'] = classes[timetable[n].name].color;
-		progressbar.style.right = null;
+		progressbar.style.right = 0;
 	}
 	next.innerText = classes[timetable[n].name].pretty;
 	next.href = `https://classroom.google.com/u/${guser}/c/${classes[timetable[n].name].gc}`

@@ -12,19 +12,19 @@ html {
 body {
 	font-size: large;
 }
-table, .tile {
+#timetable, .tile {
 	border: 1px solid #333;
 }
 .tile {
 	cursor: pointer;
 }
-th {
+#timetable th {
 	width: 120px;
 }
-th, td {
+#timetable th, td {
 	text-align: center;
 }
-table {
+#timetable {
 	empty-cells: hide;
 }
 .startt::after {
@@ -44,22 +44,16 @@ a {
 	display: block;
 }
 #bot {
-	display: inline-block;
-	text-align: right;
 	margin: 10px;
 }
-#bot>label {
-	display: block;
+#bot td>a,
+#bot th {
+	padding: 10px;
 }
-#bot>label>div {
-	display: inline-block;
+#bot td {
 	position: relative;
-}
-#bot>label>div>a {
-	display: inline-block;
-	padding: 5px;
-	width: 150px;
-	text-align: center;
+	padding: 0;
+	width: 160px;
 }
 #progressbar {
 	position: absolute;
@@ -70,7 +64,7 @@ a {
 
 </head><body>
 
-<table>
+<table id='timetable'>
 	<thead>
 		<tr>
 			<th>Day</th>
@@ -89,10 +83,17 @@ a {
 	</tbody>
 </table>
 
-<div id='bot'>
-	<label>Current lesson: <div><a id='cur'></a></div></label>
-<label>Time left: <div><div id='progressbar'></div><a id='left'></a></div></label>
-<label>Next lesson: <div><a id='next'></a></div></label>
-</div>
+<table id='bot'>
+	<tr>
+		<th>Current lesson</th>
+		<th>Time left</th>
+		<th>Next lesson</th>
+	</tr>
+	<tr>
+		<td><a id='cur'></a></td>
+		<td><div id='progressbar'></div><a id='left'></a></td>
+		<td><a id='next'></a></td>
+	</tr>
+</table>
 
 </body></html>
