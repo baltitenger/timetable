@@ -10,6 +10,7 @@ window.onload = async function() {
 		let url = 'https://balti.desnull.hu/timetable/index.html';
 		url += '?class='+cls;
 		url += '&authuser='+authuser.value;
+		url += '&color='+ +color.checked;
 		url += '&filter=';
 		let first = true;
 		for (let abbrev in classes) {
@@ -52,9 +53,15 @@ window.onload = async function() {
 		croomc.innerText = classes[abbrev].gc;
 		row.appendChild(croomc);
 
+		let colorc = document.createElement('td');
+		colorc.innerText = classes[abbrev].color;
+		colorc.style.color = classes[abbrev].color;
+		row.appendChild(colorc);
+
 		tbody.appendChild(row);
 	}
 
 	authuser.onchange = genurl;
+	color.onchange = genurl;
 	genurl();
 }

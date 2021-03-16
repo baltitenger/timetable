@@ -8,6 +8,9 @@
 body {
 	font-size: large;
 }
+td:nth-child(2), td:nth-child(4) {
+	font-family: monospace, monospace;
+}
 </style>
 
 </head><body>
@@ -19,13 +22,14 @@ body {
 			<th>Abbrev</th>
 			<th>Class name</th>
 			<th>Classroom id</th>
+			<th>Color</th>
 		</tr>
 	</thead>
 	<tbody id='tbody'>
 	</tbody>
 </table>
-<label>Google user num:</label><input type='text' value='1' id='authuser'>
-<br>
+<label>Google user num:<input type='text' value='1' id='authuser'></label><br>
+<label>Use colors:<input type='checkbox' id='color'></label><br>
 <a id='urlbox'></a>
 
 </body></html>

@@ -32,11 +32,11 @@
 			}, {
 				"start": 5,
 				"len": 1,
-				"name": "inf"
+				"name": "ang"
 			}, {
 				"start": 5,
 				"len": 1,
-				"name": "bio"
+				"name": "ANG"
 			}, {
 				"start": 6,
 				"len": 1,
@@ -66,11 +66,11 @@
 			}, {
 				"start": 4,
 				"len": 1,
-				"name": "ang"
+				"name": "inf"
 			}, {
 				"start": 4,
 				"len": 1,
-				"name": "ANG"
+				"name": "bio"
 			}, {
 				"start": 5,
 				"len": 1,
@@ -235,79 +235,98 @@
 	"classes": {
 		"MAT": {
 			"pretty": "Maths HL",
-			"gc": "MjA5ODI0NDY5NDcy"
+			"gc": "MjA5ODI0NDY5NDcy",
+			"color": "#c26401"
 		},
 		"mat": {
 			"pretty": "Maths SL",
-			"gc": "MjA5OTYyOTUyNDIx"
+			"gc": "MjA5OTYyOTUyNDIx",
+			"color": ""
 		},
 		"fra": {
 			"pretty": "Francia",
-			"gc": "idk"
+			"gc": "idk",
+			"color": ""
 		},
 		"ném": {
 			"pretty": "Német",
-			"gc": "MjEwMzQzODEyMzE0"
+			"gc": "MjEwMzQzODEyMzE0",
+			"color": ""
 		},
 		"oro": {
 			"pretty": "Orosz",
-			"gc": "MjM3NzY4MDAyOTUz"
+			"gc": "MjM3NzY4MDAyOTUz",
+			"color": ""
 		},
 		"spa": {
 			"pretty": "Spanyol",
-			"gc": "idk"
+			"gc": "MjA5NzM0NzE3NjMx",
+			"color": ""
 		},
 		"mag": {
 			"pretty": "Magyar",
-			"gc": "MTcyNjUzNjM0NzE3"
+			"gc": "MTcyNjUzNjM0NzE3",
+			"color": "#202124"
 		},
 		"inf": {
 			"pretty": "CompSci",
-			"gc": "MjA5ODk1Mjg1Njg1"
+			"gc": "MjA5ODk1Mjg1Njg1",
+			"color": "#1967d2"
 		},
 		"bio": {
 			"pretty": "Biology",
-			"gc": "MjA5ODM3MjU2OTIx"
+			"gc": "MjA5ODM3MjU2OTIx",
+			"color": ""
 		},
 		"fiz": {
 			"pretty": "Physics",
-			"gc": "MjA5ODg1MzQ0MTcw"
+			"gc": "MjA5ODg1MzQ0MTcw",
+			"color": "#174ea6"
 		},
 		"tör": {
 			"pretty": "History",
-			"gc": "MjEwMzEzODM5Mzgy"
+			"gc": "MjEwMzEzODM5Mzgy",
+			"color": "#c26401"
 		},
 		"köz": {
 			"pretty": "Economics",
-			"gc": "MTcyNjYwNDY1NDk1"
+			"gc": "MTcyNjYwNDY1NDk1",
+			"color": "#007b83"
 		},
 		"pszi": {
 			"pretty": "Psychology",
-			"gc": "idk"
+			"gc": "MjExNTEyNDIxODE0",
+			"color": ""
 		},
 		"ang": {
 			"pretty": "English B",
-			"gc": "MjEwMDgyNDU2ODMz"
+			"gc": "MjEwMDgyNDU2ODMz",
+			"color": "#1967d2"
 		},
 		"ANG": {
 			"pretty": "English A",
-			"gc": "MjA5ODEyOTA5NTQx"
+			"gc": "MjA5ODEyOTA5NTQx",
+			"color": "#5f6368"
 		},
 		"tok": {
 			"pretty": "TOK",
-			"gc": "MjA5ODQ3ODc0ODQx"
+			"gc": "MjA5ODQ3ODc0ODQx",
+			"color": "#1967d2"
 		},
 		"ofo": {
 			"pretty": "Ofő",
-			"gc": "MzQ2NTY2MzQ0NTla"
+			"gc": "MzQ2NTY2MzQ0NTla",
+			"color": "#1967d2"
 		},
 		"kém": {
 			"pretty": "Kémia",
-			"gc": "MjA4OTMxNzQ3OTc5"
+			"gc": "MjA4OTMxNzQ3OTc5",
+			"color": ""
 		},
 		"KÉM": {
 			"pretty": "Kémia fakt",
-			"gc": "MjA2MzQ4MTMyMTM2"
+			"gc": "MjA2MzQ4MTMyMTM2",
+			"color": ""
 		}
 	}
 }

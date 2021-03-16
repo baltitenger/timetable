@@ -5,6 +5,10 @@
 <title>Timetable</title>
 <script src='index.js'></script>
 <style>
+html {
+	background-color: black;
+	color: white;
+}
 body {
 	font-size: large;
 }
@@ -39,6 +43,29 @@ a {
 	color: inherit;
 	display: block;
 }
+#bot {
+	display: inline-block;
+	text-align: right;
+	margin: 10px;
+}
+#bot>label {
+	display: block;
+}
+#bot>label>div {
+	display: inline-block;
+	position: relative;
+}
+#bot>label>div>a {
+	display: inline-block;
+	padding: 5px;
+	width: 150px;
+	text-align: center;
+}
+#progressbar {
+	position: absolute;
+	height: 100%;
+	z-index: -1;
+}
 </style>
 
 </head><body>
@@ -61,5 +88,11 @@ a {
 	<tbody id='tbody'>
 	</tbody>
 </table>
+
+<div id='bot'>
+	<label>Current lesson: <div><a id='cur'></a></div></label>
+<label>Time left: <div><div id='progressbar'></div><a id='left'></a></div></label>
+<label>Next lesson: <div><a id='next'></a></div></label>
+</div>
 
 </body></html>
