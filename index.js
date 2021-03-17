@@ -64,23 +64,23 @@ function update_times() {
 	if (time < timetable[c].end) {
 		cur.innerText = classes[timetable[c].name].pretty;
 		cur.href = `https://classroom.google.com/u/${guser}/c/${classes[timetable[c].name].gc}`
-		cur.style['background-color'] = classes[timetable[c].name].color;
+		cur.style.backgroundColor = classes[timetable[c].name].color;
 		left.innerText = formatter.format(timetable[c].end - time);
 		progressbar.style.width = 100*(timetable[c].end - time)/(timetable[c].end - timetable[c].start) + '%';
-		progressbar.style['background-color'] = classes[timetable[c].name].color;
-		delete progressbar.style.right;
+		progressbar.style.backgroundColor = classes[timetable[c].name].color;
+		progressbar.style.right = null;
 	} else {
 		cur.innerText = '-';
-		delete cur.href;
-		delete cur.style['background-color'];
+		cur.href = null;
+		cur.style.backgroundColor = null;
 		left.innerText = formatter.format(timetable[n].start - time);
 		progressbar.style.width = 100*(1 - (timetable[n].start - time)/(timetable[n].start - timetable[c].end)) + '%';
-		progressbar.style['background-color'] = classes[timetable[n].name].color;
+		progressbar.style.backgroundColor = classes[timetable[n].name].color;
 		progressbar.style.right = 0;
 	}
 	next.innerText = classes[timetable[n].name].pretty;
 	next.href = `https://classroom.google.com/u/${guser}/c/${classes[timetable[n].name].gc}`
-	next.style['background-color'] = classes[timetable[n].name].color;
+	next.style.backgroundColor = classes[timetable[n].name].color;
 
 	setTimeout(update_times, 1000);
 }
@@ -109,7 +109,7 @@ window.onload = async function() {
 			let cell = row.appendChild(document.createElement('td'));
 			cell.colSpan = lesson.len;
 			if (usecolor && classes[lesson.name].color)
-				cell.style['background-color'] = classes[lesson.name].color;
+				cell.style.backgroundColor = classes[lesson.name].color;
 			const start = starttimes[lesson.start] + (i + 1) * day;
 			const end = start + mins(40*lesson.len);
 			cell.innerHTML = `<a href='https://classroom.google.com/u/${guser}/c/${classes[lesson.name].gc}'><div class='lesson'>${classes[lesson.name].pretty}</div><span class='startt'>${formatter.format(start)}</span><span class='endt'>${formatter.format(end)}</span></a>`;
