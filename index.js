@@ -71,7 +71,7 @@ function update_times() {
 		progressbar.style.right = null;
 	} else {
 		cur.innerText = '-';
-		cur.href = null;
+		cur.removeAttribute('href');
 		cur.style.backgroundColor = null;
 		left.innerText = formatter.format(timetable[n].start - time);
 		progressbar.style.width = 100*(1 - (timetable[n].start - time)/(timetable[n].start - timetable[c].end)) + '%';
