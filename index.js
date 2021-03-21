@@ -36,6 +36,15 @@ const starttimes = [
 	pmd(14,50),
 ];
 
+function dur_fmt(dur) {
+	dur = Math.floor(dur/1000);
+	const sec = ('0' + dur % 60).slice(-2);
+	dur = Math.floor(dur/60);
+	const min = ('0' + dur % 60).slice(-2);
+	dur = Math.floor(dur/60);
+	return (dur > 0 ? dur + ':' : '' ) + min + ':' + sec;
+}
+
 let timetable = [];
 let classes;
 let guser;
@@ -58,31 +67,33 @@ function cur_lesson(time) {
 function update_times() {
 	const time = cur_pmd();
 	const c = cur_lesson(time);
-	const n = c + 1 % timetable.length;
-	const formatter = new Intl.DateTimeFormat('default', { timeStyle: 'medium', hourCycle: 'h23', timeZone: 'UTC' });
+	const n = (c + 1) % timetable.length;
 
-	if (time < timetable[c].end) {
-		cur.innerText = classes[timetable[c].name].pretty;
-		cur.href = `https://classroom.google.com/u/${guser}/c/${classes[timetable[c].name].gc}`
-		cur.style.backgroundColor = classes[timetable[c].name].color;
-		left.innerText = formatter.format(timetable[c].end - time);
-		progressbar.style.width = 100*(timetable[c].end - time)/(timetable[c].end - timetable[c].start) + '%';
-		progressbar.style.backgroundColor = classes[timetable[c].name].color;
+	const curc = timetable[c];
+	const nextc = timetable[n];
+	const curs = c > n && time < timetable[n].start ? -7*day : 0;
+	const nexts = c > n && time > timetable[c].end ? 7*day : 0;
+
+	if (time < curc.end+curs) {
+		cur.innerText = classes[curc.name].pretty;
+		cur.href = `https://classroom.google.com/u/${guser}/c/${classes[curc.name].gc}`
+		cur.style.backgroundColor = classes[curc.name].color;
+		left.innerText = dur_fmt(curc.end+curs - time);
+		progressbar.style.width = 100*(curc.end+curs - time)/(curc.end - curc.start) + '%';
+		progressbar.style.backgroundColor = classes[curc.name].color;
 		progressbar.style.right = null;
 	} else {
 		cur.innerText = '-';
 		cur.removeAttribute('href');
 		cur.style.backgroundColor = null;
-		left.innerText = formatter.format(timetable[n].start - time);
-		progressbar.style.width = 100*(1 - (timetable[n].start - time)/(timetable[n].start - timetable[c].end)) + '%';
-		progressbar.style.backgroundColor = classes[timetable[n].name].color;
+		left.innerText = dur_fmt(nextc.start+nexts - time);
+		progressbar.style.width = 100*(1 - (nextc.start+nexts - time)/((nextc.start+nexts) - (curc.end+curs))) + '%';
+		progressbar.style.backgroundColor = classes[nextc.name].color;
 		progressbar.style.right = 0;
 	}
-	next.innerText = classes[timetable[n].name].pretty;
-	next.href = `https://classroom.google.com/u/${guser}/c/${classes[timetable[n].name].gc}`
-	next.style.backgroundColor = classes[timetable[n].name].color;
-
-	setTimeout(update_times, 1000);
+	next.innerText = classes[nextc.name].pretty;
+	next.href = `https://classroom.google.com/u/${guser}/c/${classes[nextc.name].gc}`
+	next.style.backgroundColor = classes[nextc.name].color;
 }
 
 window.onload = async function() {
@@ -124,4 +135,5 @@ window.onload = async function() {
 		}
 	}
 	update_times();
+	setInterval(update_times, 1000);
 }
