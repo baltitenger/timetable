@@ -4,230 +4,346 @@
 			{
 				"start": 1,
 				"len": 1,
+				"offset": 0,
+				"room": 106,
 				"name": "mat"
 			}, {
 				"start": 1,
 				"len": 1,
+				"offset": 0,
+				"room": 43,
 				"name": "MAT"
 			}, {
 				"start": 2,
 				"len": 1,
+				"offset": 0,
+				"room": 110,
 				"name": "fra"
 			}, {
 				"start": 2,
 				"len": 1,
+				"offset": 0,
+				"room": 30,
 				"name": "ném"
 			}, {
 				"start": 2,
 				"len": 1,
+				"offset": 0,
+				"room": 225,
 				"name": "oro"
 			}, {
 				"start": 2,
 				"len": 1,
+				"offset": 0,
+				"room": 120,
 				"name": "spa"
 			}, {
 				"start": 3,
 				"len": 2,
+				"offset": 0,
+				"room": 102,
 				"name": "mag"
 			}, {
 				"start": 5,
 				"len": 1,
+				"offset": 0,
+				"room": 228,
 				"name": "ang"
 			}, {
 				"start": 5,
 				"len": 1,
+				"offset": 0,
+				"room": 224,
 				"name": "ANG"
 			}, {
 				"start": 6,
 				"len": 1,
+				"offset": -5,
+				"room": 124,
 				"name": "fra"
 			}, {
 				"start": 6,
-				"len": 3,
+				"len": 1,
+				"offset": -5,
+				"room": 42,
+				"name": "fiz"
+			}, {
+				"start": 7,
+				"len": 2,
+				"offset": 5,
+				"room": 42,
 				"name": "fiz"
 			}
 		], [
 			{
 				"start": 0,
 				"len": 2,
+				"offset": 5,
+				"room": 109,
 				"name": "tör"
 			}, {
 				"start": 0,
 				"len": 2,
+				"offset": 0,
+				"room": 45,
 				"name": "KÉM"
 			}, {
 				"start": 2,
 				"len": 2,
+				"offset": 0,
+				"room": 224,
 				"name": "köz"
 			}, {
 				"start": 2,
 				"len": 2,
+				"offset": 0,
+				"room": 101,
 				"name": "pszi"
 			}, {
 				"start": 4,
 				"len": 1,
+				"offset": -5,
+				"room": 112,
 				"name": "inf"
 			}, {
 				"start": 4,
 				"len": 1,
+				"offset": -5,
+				"room": 48,
 				"name": "bio"
 			}, {
 				"start": 5,
 				"len": 1,
+				"offset": 5,
+				"room": 106,
 				"name": "mat"
 			}, {
 				"start": 5,
 				"len": 1,
+				"offset": 5,
+				"room": 118,
 				"name": "MAT"
 			}, {
 				"start": 6,
 				"len": 1,
+				"offset": 0,
+				"room": 102,
 				"name": "fra"
 			}, {
 				"start": 6,
 				"len": 1,
+				"offset": 0,
+				"room": 30,
 				"name": "ném"
 			}, {
 				"start": 6,
 				"len": 1,
+				"offset": 0,
+				"room": 225,
 				"name": "oro"
 			}, {
 				"start": 6,
 				"len": 1,
+				"offset": 0,
+				"room": 111,
 				"name": "spa"
 			}, {
 				"start": 7,
 				"len": 1,
+				"offset": 0,
+				"room": 48,
 				"name": "kém"
 			}
 		], [
 			{
 				"start": 0,
 				"len": 2,
+				"offset": 20,
+				"room": 43,
 				"name": "fiz"
 			}, {
 				"start": 2,
 				"len": 1,
+				"offset": 0,
+				"room": 228,
 				"name": "mag"
 			}, {
 				"start": 3,
 				"len": 1,
+				"offset": 0,
+				"room": 114,
 				"name": "tör"
 			}, {
 				"start": 3,
 				"len": 1,
+				"offset": 0,
+				"room": 43,
 				"name": "kém"
 			}, {
 				"start": 4,
 				"len": 2,
+				"offset": 0,
+				"room": 225,
 				"name": "ang"
 			}, {
 				"start": 4,
 				"len": 2,
+				"offset": 0,
+				"room": 208,
 				"name": "ANG"
 			}, {
 				"start": 6,
 				"len": 2,
+				"offset": 5,
+				"room": 35,
 				"name": "inf"
 			}, {
 				"start": 6,
 				"len": 2,
+				"offset": 5,
+				"room": 48,
 				"name": "bio"
 			}
 		], [
 			{
 				"start": 0,
 				"len": 2,
+				"offset": 20,
+				"room": 106,
 				"name": "mat"
 			}, {
 				"start": 0,
 				"len": 2,
+				"offset": 10,
+				"room": 42,
 				"name": "MAT"
 			}, {
 				"start": 2,
 				"len": 2,
+				"offset": 0,
+				"room": 207,
 				"name": "tok"
 			}, {
 				"start": 4,
 				"len": 1,
+				"offset": 0,
+				"room": 116,
 				"name": "fra"
 			}, {
 				"start": 4,
 				"len": 1,
+				"offset": 0,
+				"room": 30,
 				"name": "ném"
 			}, {
 				"start": 4,
 				"len": 1,
+				"offset": 0,
+				"room": 225,
 				"name": "oro"
 			}, {
 				"start": 4,
 				"len": 1,
+				"offset": 0,
+				"room": 111,
 				"name": "spa"
 			}, {
 				"start": 5,
 				"len": 2,
+				"offset": 0,
+				"room": 35,
 				"name": "inf"
 			}, {
 				"start": 5,
 				"len": 2,
+				"offset": 0,
+				"room": 47,
 				"name": "bio"
 			}, {
 				"start": 7,
 				"len": 2,
+				"offset": 5,
+				"room": 111,
 				"name": "tör"
 			}, {
 				"start": 7,
 				"len": 2,
+				"offset": 5,
+				"room": 45,
 				"name": "KÉM"
 			}
 		], [
 			{
 				"start": 0,
 				"len": 2,
+				"offset": 10,
+				"room": 43,
 				"name": "MAT"
 			}, {
 				"start": 0,
 				"len": 2,
+				"offset": 10,
+				"room": 224,
 				"name": "mag"
 			}, {
 				"start": 2,
 				"len": 1,
+				"offset": 0,
+				"room": 103,
 				"name": "tör"
 			}, {
 				"start": 3,
 				"len": 2,
+				"offset": 0,
+				"room": 208,
 				"name": "ang"
 			}, {
 				"start": 3,
 				"len": 2,
+				"offset": 0,
+				"room": 211,
 				"name": "ANG"
 			}, {
 				"start": 5,
 				"len": 1,
+				"offset": 5,
+				"room": 114,
 				"name": "köz"
 			}, {
 				"start": 5,
 				"len": 1,
+				"offset": 5,
+				"room": 110,
 				"name": "pszi"
 			}, {
 				"start": 6,
 				"len": 1,
+				"offset": 0,
+				"room": 228,
 				"name": "ofo"
 			}, {
 				"start": 7,
 				"len": 2,
+				"offset": 0,
+				"room": 104,
 				"name": "fra"
 			}, {
 				"start": 7,
 				"len": 2,
+				"offset": 0,
+				"room": 30,
 				"name": "ném"
 			}, {
 				"start": 7,
 				"len": 2,
+				"offset": 0,
+				"room": 225,
 				"name": "oro"
 			}, {
 				"start": 7,
 				"len": 2,
+				"offset": 0,
+				"room": 118,
 				"name": "spa"
 			}
 		]
@@ -328,5 +444,6 @@
 			"gc": "MjA2MzQ4MTMyMTM2",
 			"color": ""
 		}
-	}
+	},
+	"lunch": [ 7, 5, 6, 7, 5 ]
 }
