@@ -59,6 +59,21 @@ function dur_fmt(dur) {
 
 let timetable = [];
 let classes;
+let substClass;
+
+async function fill_subst() {
+	substDiv.replaceChildren();
+	let now = new Date();
+	const start = now.toISOString().slice(0,10)
+	now.setDate(now.getDate() + 7);
+	const end = now.toISOString().slice(0,10)
+	const substs = (await (await fetch(`https://balti.desnull.hu/subst_api?startDay=${start}&endDay=${end}&orderBy=day&orderDirection=asc`)).json()).substitutions;
+	for (const subst of substs) {
+		if (!substClass.has(subst.class))
+			continue;
+		substDiv.appendChild(document.createElement('div')).innerText = `${new Date(subst.day).toDateString()} – ${subst.subject}#${subst.lesson}: ${subst.missingTeacher} → ${subst.substitutingTeacher} (${subst.comment})`;
+	}
+}
 
 function cur_lesson(time) {
 	let count = timetable.length;
@@ -113,28 +128,34 @@ window.onload = async function() {
 	const thing = await (await fetch(localStorage.cls+'.json', {cache: 'no-cache'})).json();
 	const table = thing.table;
 	const lunch = thing.lunch;
+	substClass = new Set(thing.substClass);
 	classes = thing.classes;
 	for (let i = 0; i < table.length; ++i) {
 		let row = tbody.appendChild(document.createElement('tr'));
 		let lastEnd = pmd(7,0) + (i + 1) * day
 		let num = 0;
 		row.appendChild(document.createElement('td')).innerText = wdays[i];
+		function insertEmpty(nextStart) {
+			if (num < lunch[i] && lunch[i] < nextStart) {
+				let y = row.appendChild(document.createElement('td'));
+				y.colSpan = lunch[i] - num;
+				num = lunch[i];
+				y.style.borderRightColor = 'red';
+			}
+			let x = row.appendChild(document.createElement('td'));
+			x.colSpan = nextStart - num;
+			if (nextStart == lunch[i])
+				x.style.borderRightColor = 'red';
+			if (num == lunch[i])
+				x.style.borderLeftColor = 'red';
+		}
 		for (let lesson of table[i]) {
 			if (lesson.start < num)
 				continue;
 			if (!filter.includes(lesson.name))
 				continue;
 			if (lesson.start > num) {
-				if (num < lunch[i] && lunch[i] < lesson.start) {
-					let y = row.appendChild(document.createElement('td'));
-					y.colSpan = lunch[i] - num;
-					num = lunch[i];
-					y.style.borderRight = '3px solid red'
-				}
-				let x = row.appendChild(document.createElement('td'));
-				x.colSpan = lesson.start - num;
-				if (lesson.start == lunch[i])
-					x.style.borderRight = '3px solid red'
+				insertEmpty(lesson.start)
 			}
 			let cell = row.appendChild(document.createElement('td'));
 			cell.colSpan = lesson.len;
@@ -145,7 +166,9 @@ window.onload = async function() {
 				cell.firstChild.style.backgroundColor = classes[lesson.name].color;
 				cell.style.backgroundColor = classes[lesson.name].color;
 			if (lesson.start + lesson.len == lunch[i])
-				cell.style.borderRight = '3px solid red'
+				cell.style.borderRightColor = 'red';
+			if (lesson.start == lunch[i])
+				cell.style.borderLeftColor = 'red';
 			timetable.push({
 				name: lesson.name,
 				cell: cell,
@@ -155,7 +178,11 @@ window.onload = async function() {
 			num = lesson.start + lesson.len;
 			lastEnd = end
 		}
+		if (num < starttimes.length)
+			insertEmpty(starttimes.length)
 	}
 	update_times();
-	setInterval(update_times, 1000);
+	setInterval(update_times, 1000); // update times every second
+	fill_subst();
+	setInterval(fill_subst, 1000*60*10); // check substitutions every ten minutes
 }

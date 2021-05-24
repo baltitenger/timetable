@@ -351,99 +351,119 @@
 	"classes": {
 		"MAT": {
 			"pretty": "Maths HL",
+			"substSubject": "matematika",
 			"gc": "MjA5ODI0NDY5NDcy",
 			"color": "#c26401"
 		},
 		"mat": {
 			"pretty": "Maths SL",
+			"substSubject": "matematika",
 			"gc": "MjA5OTYyOTUyNDIx",
 			"color": ""
 		},
 		"fra": {
 			"pretty": "Francia",
+			"substSubject": "francia",
 			"gc": "idk",
 			"color": ""
 		},
 		"ném": {
 			"pretty": "Német",
+			"substSubject": "német",
 			"gc": "MjEwMzQzODEyMzE0",
 			"color": ""
 		},
 		"oro": {
 			"pretty": "Orosz",
+			"substSubject": "orosz",
 			"gc": "MjM3NzY4MDAyOTUz",
 			"color": ""
 		},
 		"spa": {
 			"pretty": "Spanyol",
+			"substSubject": "spanyol",
 			"gc": "MjA5NzM0NzE3NjMx",
 			"color": ""
 		},
 		"mag": {
 			"pretty": "Magyar",
+			"substSubject": "magyar",
 			"gc": "MTcyNjUzNjM0NzE3",
 			"color": "#202124"
 		},
 		"inf": {
 			"pretty": "CompSci",
+			"substSubject": "informatika",
 			"gc": "MjA5ODk1Mjg1Njg1",
 			"color": "#1967d2"
 		},
 		"bio": {
 			"pretty": "Biology",
+			"substSubject": "biológia",
 			"gc": "MjA5ODM3MjU2OTIx",
 			"color": ""
 		},
 		"fiz": {
 			"pretty": "Physics",
+			"substSubject": "fizika",
 			"gc": "MjA5ODg1MzQ0MTcw",
 			"color": "#174ea6"
 		},
 		"tör": {
 			"pretty": "History",
+			"substSubject": "történelem",
 			"gc": "MjEwMzEzODM5Mzgy",
 			"color": "#c26401"
 		},
 		"köz": {
 			"pretty": "Economics",
+			"substSubject": "közgáz",
 			"gc": "MTcyNjYwNDY1NDk1",
 			"color": "#007b83"
 		},
 		"pszi": {
 			"pretty": "Psychology",
+			"substSubject": "pszichológia",
 			"gc": "MjExNTEyNDIxODE0",
 			"color": ""
 		},
 		"ang": {
 			"pretty": "English B",
+			"substSubject": "angol",
 			"gc": "MjEwMDgyNDU2ODMz",
 			"color": "#1967d2"
 		},
 		"ANG": {
 			"pretty": "English A",
+			"substSubject": "angol",
 			"gc": "MjA5ODEyOTA5NTQx",
 			"color": "#5f6368"
 		},
 		"tok": {
 			"pretty": "TOK",
+			"substSubject": "tok",
 			"gc": "MjA5ODQ3ODc0ODQx",
 			"color": "#1967d2"
 		},
 		"ofo": {
 			"pretty": "Ofő",
+			"substSubject": "osztályfőnöki",
 			"gc": "MzQ2NTY2MzQ0NTla",
 			"color": "#1967d2"
 		},
 		"kém": {
 			"pretty": "Kémia",
+			"substSubject": "kémia",
 			"gc": "MjA4OTMxNzQ3OTc5",
 			"color": ""
 		},
 		"KÉM": {
 			"pretty": "Kémia fakt",
+			"substSubject": "kémia",
 			"gc": "MjA2MzQ4MTMyMTM2",
 			"color": ""
 		}
 	},
-	"lunch": [ 7, 5, 6, 7, 5 ]
+	"lunch": [ 7, 5, 6, 7, 5 ],
+	"substClass": [ "11.IB" ]
 }

@@ -4,7 +4,7 @@
 <meta charset='UTF-8'>
 <title>Timetable</title>
 <link rel="manifest" href="timetable.webmanifest">
-<script src='index.js'></script>
+<script src='index.js?x'></script>
 <style>
 html {
 	background-color: black;
@@ -15,17 +15,14 @@ body {
 }
 #timetable, .tile {
 	border: 1px solid #333;
-	border-collapse: collapse;
+	border-spacing: 0px;
 }
 #timetable th {
 	width: 120px;
 }
 #timetable th, #timetable td {
 	text-align: center;
-	border: 3px solid black;
-}
-#timetable {
-	empty-cells: hide;
+	border: 2px solid black;
 }
 .startt::after {
 	content: ' - ';
@@ -99,5 +96,9 @@ a {
 		<td id='next'></td>
 	</tr>
 </table>
+
+<h3>Substitutions:</h3>
+<div id='substDiv'>
+</div>
 
 </body></html>
